@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Spark Base -->
+  <path d="M256 48L384 464L256 368L128 464L256 48Z" fill="url(#spark_gradient)"/>
+  
+  <!-- Spark Glow -->
+  <path d="M256 48L384 464L256 368L128 464L256 48Z" fill="url(#glow_gradient)" filter="url(#glow)"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <!-- Spark Gradient -->
+    <linearGradient id="spark_gradient" x1="256" y1="48" x2="256" y2="464" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#FFA500"/>
+    </linearGradient>
+    
+    <!-- Glow Gradient -->
+    <linearGradient id="glow_gradient" x1="256" y1="48" x2="256" y2="464" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#FFD700" stop-opacity="0.5"/>
+      <stop offset="100%" style="stop-color:#FFA500" stop-opacity="0"/>
+    </linearGradient>
+    
+    <!-- Glow Filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+    </filter>
+  </defs>
+</svg>
